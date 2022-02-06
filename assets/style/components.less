@@ -1,0 +1,213 @@
+@import './variables.less';
+
+// Butonlar
+
+.ant-btn {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    font-size: 13px !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ant-btn-primary {
+    box-shadow: none !important;
+    text-shadow: none !important;
+}
+
+.ant-btn-success {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-color: @success-color;
+    border-color: @success-color;
+    color: #fff;
+
+    &:hover {
+        background-color: @success-color-hover;
+        border-color: @success-color-hover;
+        color: #fff;
+    }
+    
+    &:focus{
+        background-color: @success-color-hover;
+        border-color: @success-color-hover;
+        color: #fff;
+    }
+}
+
+.ant-btn-info {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    background-color: @info-color;
+    border-color: @info-color;
+    color: #fff;
+
+    &:hover {
+        background-color: @info-color-hover;
+        border-color: @info-color-hover;
+        color: #fff;
+    }
+    
+    &:focus{
+        background-color: @info-color-hover;
+        border-color: @info-color-hover;
+        color: #fff;
+    }
+}
+
+
+// Alert
+
+.ant-alert-success {
+    border: none;
+    position: relative;
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+        background-color: @alert-success-darker;
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 4px;
+    }
+}
+.ant-alert-warning {
+    border: none;
+    position: relative;
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 4px;
+        background-color: @alert-warning-darker;
+
+    }
+}
+.ant-alert-error {
+    border: none;
+    position: relative;
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        border-radius: 4px;
+        background-color: @alert-error-darker;
+
+    }
+}
+.ant-alert-info {
+    border: none;
+    position: relative;
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @alert-info-darker;
+        border-radius: 4px;
+    }
+}
+
+
+// Notifications
+.ant-notification-notice {
+    box-shadow: none;
+}
+.ant-notification-notice-message {
+    font-weight: 500;
+}
+.ant-notification-notice-close {
+    top: 13px;
+}
+.ant-notification-notice-icon {
+    top: 13px;
+}
+
+.notification-success {
+    background-color: #f4fce4;
+    border: 1px solid #c4e08a;
+    border-left: 0;
+    position: relative;
+    .ant-notification-notice-close {
+        color: #516d1a;
+    }
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @alert-success-darker;
+    }
+}
+
+.notification-warning {
+    background-color: #fffbe6;
+    border: 1px solid @alert-warning-darker;
+    border-left: 0;
+    position: relative;
+    .ant-notification-notice-close {
+        color: #776719;
+    }
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @alert-warning-darker;
+    }
+}
+
+.notification-error {
+    background-color: #fff2f0;
+    border: 1px solid #fccec7;
+    border-left: 0;
+    position: relative;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .25);
+    .ant-notification-notice-close {
+        color: #70271b;
+    }
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @alert-error-darker;
+    }
+}
+
+.notification-info {
+    background-color: #f0f7ff;
+    border: 1px solid #b5d3f7;
+    border-left: 0;
+    position: relative;
+    .ant-notification-notice-close {
+        color: #1b4474;
+    }
+    &::before{
+        height: 100%;
+        content: "";
+        width: 5px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background-color: @alert-info-darker;
+    }
+}
